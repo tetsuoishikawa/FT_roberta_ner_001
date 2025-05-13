@@ -8,7 +8,7 @@ ner_pipeline = pipeline("ner", model=model, tokenizer=tokenizer, aggregation_str
 
 st.title("🩺 日本語 医療会話 NER アプリ")
 
-text = st.text_area("解析したいテキストを入力してください：", "金丸先生が松本市の中条診療に通院しました。")
+text = st.text_area("解析したいテキストを入力してください：", "金丸先生が松本市の石川クリニックに通院しました。")
 
 if st.button("解析実行"):
     with st.spinner("解析中..."):
